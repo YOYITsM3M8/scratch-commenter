@@ -7,11 +7,13 @@
   <h1>Scratch Commenter</h1>
   <h2>Make Comments from anywhere</h2>
   <button onclick="messageTest();">Send a test to my account!! plz i need messages</button>
+  <result></result>
+  
   <a href="https://scratch.mit.edu/users/YOYITsM3M8">Now see if it worked!!!</a>
 </body>
 <script>
 function messageTest() { 
-fetch("https://crossorigin.me/https://scratch.mit.edu/site-api/comments/user/yoyitsm3m8/add/", {"credentials":"include","headers":{"accept":"text/html, */*; q=0.01","accept-language":"en-US,en;q=0.9,pt;q=0.8","content-type":"application/x-www-form-urlencoded; charset=UTF-8","sec-fetch-mode":"cors","sec-fetch-site":"cross-site","x-csrftoken":"YFMXnC3FZyA1fqJ9aUyayZUaV1S2nFRF","x-requested-with":"XMLHttpRequest"},"referrer":"https://crossorigin.me/https://scratch.mit.edu/users/yoyitsm3m8/","referrerPolicy":"no-referrer-when-downgrade","body":"{\"content\":\"See? it works!!\",\"parent_id\":\"\",\"commentee_id\":\"\"}","method":"POST","mode":"cors"});
+document.getElementByTagName("result").innerHTML = "fetch('https://crossorigin.me/https://scratch.mit.edu/site-api/comments/user/yoyitsm3m8/add/', {'credentials':'include','headers':{'accept':'text/html, */*; q=0.01','accept-language':'en-US,en;q=0.9,pt;q=0.8','content-type':'application/x-www-form-urlencoded; charset=UTF-8','sec-fetch-mode':'cors','sec-fetch-site':'cross-site','x-csrftoken':'YFMXnC3FZyA1fqJ9aUyayZUaV1S2nFRF','x-requested-with':'XMLHttpRequest'},'referrer':'https://crossorigin.me/https://scratch.mit.edu/users/yoyitsm3m8/','referrerPolicy':'no-referrer-when-downgrade','body':'{\'content\':\'See? it works!!\',\'parent_id\':\'\',\'commentee_id\':\'\'}','method':'POST','mode':'cors'});\n Do Crtl + Shift + I to open dev tools, then paste the code above in and hit enter. Then click this link to see if it worked! <a href='https://scratch.mit.edu/user/YOYITsM3M8'>link</a>";
 };
 </script>
 </html>
